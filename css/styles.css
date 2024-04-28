@@ -729,7 +729,7 @@ address {
   color: #4d5ae5;
 }
 
-.check-label span {
+.fake-checkbox {
   width: 16px;
   height: 16px;
   border-radius: 2px;

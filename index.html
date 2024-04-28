@@ -484,10 +484,10 @@
           </ul>
         </div>
 
-        <div class="footer-form">
+        <div class="footer-form-container">
           <p class="footer-caption-text">Subscribe</p>
-          <form>
-            <label
+          <form class="footer-form">
+            <label class="footer-form-label"
               ><input
                 type="email"
                 name="subscribe-email"
@@ -496,7 +496,7 @@
                 required
             /></label>
             <button type="submit" class="subscribe-btn">
-              <span>Subscribe</span>
+              Subscribe
               <svg width="24" height="24" class="subscribe-btn-icon">
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
@@ -517,13 +517,13 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
           <div class="modal-field">
-            <label for="credentials" class="modal-label">Name</label>
+            <label for="user-name" class="modal-label">Name</label>
             <div class="input-wrap">
               <input
                 type="text"
                 class="modal-input"
                 name="credentials"
-                id="credentials"
+                id="user-name"
               />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -551,11 +551,11 @@
             </div>
           </div>
 
-          <div class="modal-field">
-            <label for="comment" class="modal-label">Comment</label>
+          <div class="modal-field modal-field-comment">
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
               name="comment"
-              id="comment"
+              id="user-comment"
               placeholder="Text input"
               class="modal-comment"
             ></textarea>
@@ -564,19 +564,19 @@
           <div class="modal-field">
             <input
               type="checkbox"
-              name="accept"
-              id="accept"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-checkbox visually-hidden"
               value="true"
             />
-            <label for="accept" class="check-label">
-              <span>
+            <label for="user-privacy" class="check-label">
+              <span class="fake-checkbox">
                 <svg width="10" height="8">
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the&nbsp
-              <a href="./">Privacy Policy</a></label
+              I accept the terms and conditions of the&nbsp;
+              <a href="./" class="privacy-link">Privacy Policy</a></label
             >
           </div>
 
